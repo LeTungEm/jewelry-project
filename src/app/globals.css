@@ -2,11 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --blue: #4D70CC;
+  --dark-blue: #00249B;
+  --bright-blue: #D6E1FF;
+  --light-blue: #7588C3;
+  --gray: ##F0F4FF;
+  --black: #4D4D4D;
 }
+
+/* Mặc định các nút pagination */
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: var(--light-blue);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Nút đang hoạt động */
+.swiper-pagination-bullet-active {
+  border-radius: 3px;
+  width: 100px; /* Kéo dài nút */
+  background: var(--dark-blue); /* Đổi màu nút (tuỳ chọn) */
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
