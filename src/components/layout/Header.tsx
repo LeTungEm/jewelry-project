@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function SubNavbar() {
+export default function Header() {
     return (
-      <div className="">
+      <div className="sticky top-0 right-0 left-0 z-50">
         <div className="flex gap-2 flex-wrap justify-between bg-[var(--blue)] text-white py-2 px-[10%]">
             <div className="flex items-center [&>*]:mr-2">
                 <Image
@@ -122,6 +122,16 @@ export default function SubNavbar() {
                 <span className="text-[var(--black)] ">Cart $0.00</span>
             </div>
         </div>
+        <nav className="bg-white py-2 px-[10%]">
+        <ul className='text-[var(--black)] uppercase flex justify-between gap-1'>
+          <li>TRANG SỨC</li>
+          <li>TRANG SỨC CƯỚI</li>
+          <li>TRANG SỨC KIM CƯƠNG</li>
+          <li>TRANG SỨC KIM CƯƠNG</li>
+          <li>TRANG SỨC KIM CƯƠNG</li>
+          <li>TRANG SỨC THƯƠNG HIỆU</li>
+        </ul>
+      </nav>
       </div>
     );
   }

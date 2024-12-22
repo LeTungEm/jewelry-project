@@ -13,10 +13,17 @@
   --foreground: #171717;
   --blue: #4D70CC;
   --dark-blue: #00249B;
+  --black-blue: #00507C;
   --bright-blue: #D6E1FF;
   --light-blue: #7588C3;
-  --gray: ##F0F4FF;
+  --gray: #F0F4FF;
+  --light-gray: #B3B3B3;
   --black: #4D4D4D;
+  --login-form: #CEDDE6;
+}
+
+*{
+  /* font-family: SVN-Gilroy; */
 }
 
 /* Mặc định các nút pagination */
